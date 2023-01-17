@@ -13,6 +13,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+import { CommonModule } from '@angular/common';
+
 
 registerLocaleData(en);
 
@@ -28,7 +32,10 @@ registerLocaleData(en);
     AppRoutingModule,
     IconsProviderModule,
     NzLayoutModule,
-    NzMenuModule
+    NzMenuModule,
+    NzInputModule,
+    NzGridModule,
+    CommonModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }
